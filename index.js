@@ -1,6 +1,9 @@
 const express = require('express');
 const fetch = require('node-fetch');
+const cors = require('cors');
 const app = express();
+
+app.use(cors()); // 🔥 Hozzáadva!
 
 const PORT = process.env.PORT || 3000;
 const DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1387068338223452211/or5BSRceIA78g02wyyjeiXKfEoFyk77WOTPLxuF2oyO19JHSTzO4_lTkslk_ThG5s5XQ";
